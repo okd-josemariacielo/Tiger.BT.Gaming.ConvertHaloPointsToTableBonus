@@ -1,0 +1,4 @@
+C:\Shalini\Backup\GIT\Tiger.BT.Gaming.OMA\Tiger.BT.Gaming.ConvertHaloPointsToTableBonus\bin\Debug\Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.dll
+C:\Shalini\Backup\GIT\Tiger.BT.Gaming.OMA\Tiger.BT.Gaming.ConvertHaloPointsToTableBonus\bin\Debug\Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.pdb
+C:\Shalini\Backup\GIT\Tiger.BT.Gaming.OMA\Tiger.BT.Gaming.ConvertHaloPointsToTableBonus\obj\Debug\Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.dll
+C:\Shalini\Backup\GIT\Tiger.BT.Gaming.OMA\Tiger.BT.Gaming.ConvertHaloPointsToTableBonus\obj\Debug\Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.pdb

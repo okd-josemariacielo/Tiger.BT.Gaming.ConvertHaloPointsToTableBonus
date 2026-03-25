@@ -1,0 +1,127 @@
+namespace Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PropertySchema {
+    using Microsoft.XLANGs.BaseTypes;
+    
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.BizTalk.Schema.Compiler", "3.0.1.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [SchemaType(SchemaTypeEnum.Property)]
+    [System.SerializableAttribute()]
+    [SchemaRoots(new string[] {@"Property1", @"errorCode"})]
+    public sealed class PropertySchema : Microsoft.XLANGs.BaseTypes.SchemaBase {
+        
+        [System.NonSerializedAttribute()]
+        private static object _rawSchema;
+        
+        [System.NonSerializedAttribute()]
+        private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
+<xs:schema xmlns=""http://Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PropertySchema"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" targetNamespace=""https://Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PropertySchema"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+  <xs:annotation>
+    <xs:appinfo>
+      <b:schemaInfo schema_type=""property"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name=""Property1"" type=""xs:string"">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid=""204e0538-8e00-4019-90f5-af993c689c05"" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name=""errorCode"" type=""xs:string"">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid=""c105d5db-1dd4-4fb2-b0dd-629a1a28aa89"" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>";
+        
+        public PropertySchema() {
+        }
+        
+        public override string XmlContent {
+            get {
+                return _strSchema;
+            }
+        }
+        
+        public override string[] RootNodes {
+            get {
+                string[] _RootElements = new string [2];
+                _RootElements[0] = "Property1";
+                _RootElements[1] = "errorCode";
+                return _RootElements;
+            }
+        }
+        
+        protected override object RawSchema {
+            get {
+                return _rawSchema;
+            }
+            set {
+                _rawSchema = value;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.BizTalk.Schema.Compiler", "3.0.1.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [System.SerializableAttribute()]
+    [PropertyType(@"Property1",@"https://Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PropertySchema","string","System.String")]
+    [PropertyGuidAttribute(@"204e0538-8e00-4019-90f5-af993c689c05")]
+    public sealed class Property1 : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
+        
+        [System.NonSerializedAttribute()]
+        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"Property1", @"https://Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PropertySchema");
+        
+        private static string PropertyValueType {
+            get {
+                throw new System.NotSupportedException();
+            }
+        }
+        
+        public override System.Xml.XmlQualifiedName Name {
+            get {
+                return _QName;
+            }
+        }
+        
+        public override System.Type Type {
+            get {
+                return typeof(string);
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.BizTalk.Schema.Compiler", "3.0.1.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [System.SerializableAttribute()]
+    [PropertyType(@"errorCode",@"https://Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PropertySchema","string","System.String")]
+    [PropertyGuidAttribute(@"c105d5db-1dd4-4fb2-b0dd-629a1a28aa89")]
+    public sealed class errorCode : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
+        
+        [System.NonSerializedAttribute()]
+        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"errorCode", @"https://Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PropertySchema");
+        
+        private static string PropertyValueType {
+            get {
+                throw new System.NotSupportedException();
+            }
+        }
+        
+        public override System.Xml.XmlQualifiedName Name {
+            get {
+                return _QName;
+            }
+        }
+        
+        public override System.Type Type {
+            get {
+                return typeof(string);
+            }
+        }
+    }
+}

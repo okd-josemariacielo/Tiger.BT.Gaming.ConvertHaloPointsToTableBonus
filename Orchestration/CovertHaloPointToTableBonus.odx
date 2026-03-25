@@ -1,0 +1,1095 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="826f44e3-47f7-46b7-a2e5-7a73a67157c7" LowerBound="1.1" HigherBound="218.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="21f4f0ba-18f0-4b6a-8bb7-eaac936c6747" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="prtType_HaloPointToTableBonus" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b1899b6b-6dc1-417f-8061-d59cfb65737a" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="5caa4a22-d614-4abd-900d-cd84b68edb54" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.50">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusReq" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="2718c562-2b0a-4275-bab6-56ec901ff848" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="8.52" HigherBound="8.89">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusRes" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="8f11a767-fbb0-4b23-9ec0-7e4373964443" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Log_Halo_PointBucketDeduct_Request" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8637a494-8ae0-4672-b2f0-026c9acf1144" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="ebba05b6-70de-4196-ad15-277e33ecc496" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.131">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f1ce6e94-1c93-4389-9b30-164364122fd0" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Port_HaloS2S_PointBucketDeduction" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8a91127a-d85d-4b20-a9db-4eed19444bc6" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="HaloS2S_PointBucketDeduction" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="23e9a1ca-c1c2-4722-b2e4-1e7c7237389d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.131">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="47c83251-c155-4687-9643-c035d36950d6" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="22.133" HigherBound="22.252">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="c990868e-0145-4b37-9469-3728ed0c94b9" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Log_Halo_PointBucketDeduct_Response" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="dbca0a14-d80f-414a-8c5c-e385ccbf869a" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="776e355b-3e50-44c9-b787-a4bf209a43e3" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.54">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.Halo1.HaloPointAdjustmentResponse1" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="71f83dc7-3399-4420-a2fd-2df795445ac6" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_rcv_PointConversionReq" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="08f6a6cc-1e4a-4e26-be6c-2f56b27dd204" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="68ccf253-5adb-4aad-b979-8f1bf4531835" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.50">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusReq" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="db1d9808-4a6f-4a49-a543-735d9705687b" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Log_PointTConversionReqAndResponse" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b0b77a07-ffc2-417f-a9f2-5f0712ada88d" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="907d1472-a4ac-469b-9d73-807136389925" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.50">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusReq" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="06e41f6e-5f64-4283-908b-d29142299dd9" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="43.52" HigherBound="43.89">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusRes" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="522a2fd1-a63e-43bf-a393-d9978020eb27" ParentLink="Module_PortType" LowerBound="46.1" HigherBound="53.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Log_Response_PointConversion" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="de37492f-9e83-4baf-b9cc-f9ca61097100" ParentLink="PortType_OperationDeclaration" LowerBound="48.1" HigherBound="52.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="5e1186c5-59c4-4d01-8fa3-f91c46dd13d0" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="50.13" HigherBound="50.50">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusRes" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="e45ecd14-cb86-4d8f-84f2-f9b66d6c1272" ParentLink="Module_PortType" LowerBound="53.1" HigherBound="60.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Log_RequestAndResponse_PointConversion" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8b7b3879-a334-4c85-a5dc-c06178b9aaf6" ParentLink="PortType_OperationDeclaration" LowerBound="55.1" HigherBound="59.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="cc662bdb-2460-454f-af7b-c2c8082ed2b8" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="57.13" HigherBound="57.50">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusReq" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="1c23afff-dc85-44d2-9b50-6868dff44d8a" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="57.52" HigherBound="57.89">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusRes" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f30ff326-cdb5-44b7-9575-5f528f5ef2a4" ParentLink="Module_PortType" LowerBound="60.1" HigherBound="67.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Send_Test_HAlo_Svc_RQ" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="7e9a0775-2001-4822-b76e-35c0cdfa05c7" ParentLink="PortType_OperationDeclaration" LowerBound="62.1" HigherBound="66.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="ff23fe6a-8d63-4866-bc72-f411750e1660" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="64.13" HigherBound="64.131">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="04d6d730-7012-474a-ab78-f4ba8cdbb3cc" ParentLink="Module_PortType" LowerBound="67.1" HigherBound="74.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_HAlo_S2S_Service" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9875be2c-037c-4b92-9b3b-c9f3dbb79f07" ParentLink="PortType_OperationDeclaration" LowerBound="69.1" HigherBound="73.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="S2SMessagePostOperation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="27fc50b7-0e74-4762-afc3-65f299f95eaa" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="71.13" HigherBound="71.131">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="dd96990c-ca2a-490c-9f94-b875e2535a5b" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="71.133" HigherBound="71.252">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="ad774f0f-6951-4f81-9a4c-d11878c83969" ParentLink="Module_PortType" LowerBound="74.1" HigherBound="81.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Send_Test_HAlo_Svc_RS" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="04525d05-a77d-4f76-9b82-d9e99d3b3635" ParentLink="PortType_OperationDeclaration" LowerBound="76.1" HigherBound="80.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="abc727fa-8eb0-4f60-bbda-de2a366d3d5d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="78.13" HigherBound="78.132">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="66138d0f-7997-4602-a8e1-29a9cd70d820" ParentLink="Module_PortType" LowerBound="81.1" HigherBound="88.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Log_TestEnquiryPointBlanceResult" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="a7834368-b54d-40a3-8dee-c84ab3099b0d" ParentLink="PortType_OperationDeclaration" LowerBound="83.1" HigherBound="87.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4459e325-a285-4c13-91b3-a2f01e9c368f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="85.13" HigherBound="85.50">
+                    <om:Property Name="Ref" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusRes" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="5abfd845-8663-4bba-8af8-e26785d45b43" ParentLink="Module_ServiceDeclaration" LowerBound="88.1" HigherBound="217.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CovertHaloPointToTableBonus" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="232aba83-cfd6-4d45-9248-6b0f5f6e28b2" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="119.1" HigherBound="120.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="Tiger.BT.RESTBehaviour.JWTTokenUtil" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="var_JWTUtility" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="50b9f5b6-355c-4fff-9fcd-2d1965768a07" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="120.1" HigherBound="121.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="var_Token" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7f6b4ba9-5a25-4616-b416-cd53d826fc3f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="121.1" HigherBound="122.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.Deserialization.Deserialization" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="var_deserialization" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="71910a33-8d05-431c-8522-9fd1f87d8631" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="109.1" HigherBound="110.1">
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusReq" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msg_BTHaloPointToTableBonusReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="03236421-b9a5-4bca-b7c4-6d04940a8fe7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="110.1" HigherBound="111.1">
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BT_ConvertPointToTableBonusRes" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msg_BTHaloPointToTableBonusRes" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d0045019-0b4d-40e3-a52b-9a9859d3cf93" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="111.1" HigherBound="112.1">
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.Halo1.HaloPointAdjustmentRequest1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Msg_Halo_PointBucketDeduct_Request" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="6c8e91d4-f5d9-441c-a7c0-1b84a83585eb" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="112.1" HigherBound="113.1">
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Msg_HaloS2S_Service_Request1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="740b92bd-9d22-4e84-af21-59a995e8dc9e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="113.1" HigherBound="114.1">
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Msg_HaloS2S_Service_Response1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b4b9f487-8c00-44f3-8d0b-89898a0ea6ac" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="114.1" HigherBound="115.1">
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.Halo1.HaloPointAdjustmentResponse1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Msg_Halo_PointBucketDeduct_Response" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c73a2bbf-a7f1-4e42-ae8b-44bae371b729" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="115.1" HigherBound="116.1">
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BallyRequestPlayerBalance" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Msg_HAlo_RQ_Type" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="59dcc535-c35f-4bbc-8499-3c8387d23896" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="116.1" HigherBound="117.1">
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Msg_HAlo_Svc_RQ" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="55508d8a-0ab9-45fd-99cb-695de8529117" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="117.1" HigherBound="118.1">
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Msg_HAlo_Svc_RS" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="37d2c1b9-5d26-4c81-8afe-9a984fdcb1a8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="118.1" HigherBound="119.1">
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Schema.BallyGetPropertyBalancesResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Msg_HAlo_RS_Type" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="208fe516-651d-445e-82bd-2af65f9f74b1" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="ec8da5c7-04df-428f-ac81-81ff690426a1" ParentLink="ServiceBody_Statement" LowerBound="124.1" HigherBound="129.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Log_RequestAndResponse_PointConversion" />
+                    <om:Property Name="MessageName" Value="msg_BTHaloPointToTableBonusReq" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="rcv_PointConversionReq" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="307110c9-bdb0-4b51-83e6-09336622f2c7" ParentLink="ServiceBody_Statement" LowerBound="129.1" HigherBound="131.1">
+                    <om:Property Name="PortName" Value="Log_rcv_PointConversionReq" />
+                    <om:Property Name="MessageName" Value="msg_BTHaloPointToTableBonusReq" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_4" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="fd29f5d3-788d-46d1-b081-5e5452f8737b" ParentLink="ServiceBody_Statement" LowerBound="131.1" HigherBound="136.1">
+                    <om:Property Name="Expression" Value="var_Token=var_JWTUtility.GenerateToken(msg_BTHaloPointToTableBonusReq.PatronID,false);&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;Table Bonus&quot;,msg_BTHaloPointToTableBonusReq.PatronID);&#xD;&#xA;//System.Diagnostics.Debug.WriteLine(var_Token); " />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="Construct" OID="c5260be9-0f5a-4ed5-8813-fdcefe18bbe9" ParentLink="ServiceBody_Statement" LowerBound="136.1" HigherBound="142.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Transform" OID="c5de931d-4c58-4466-94cf-dc6cd85dac49" ParentLink="ComplexStatement_Statement" LowerBound="139.1" HigherBound="141.1">
+                        <om:Property Name="ClassName" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Map.Trfm_Halo_PointBucketDeduct_Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="MessagePartRef" OID="32b773c0-6017-45be-8b89-eb78b1ecaf14" ParentLink="Transform_InputMessagePartRef" LowerBound="140.153" HigherBound="140.183">
+                            <om:Property Name="MessageRef" Value="msg_BTHaloPointToTableBonusReq" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="2c85639a-8cb9-4ca2-823e-a7fde9826c57" ParentLink="Transform_OutputMessagePartRef" LowerBound="140.28" HigherBound="140.62">
+                            <om:Property Name="MessageRef" Value="Msg_Halo_PointBucketDeduct_Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_4" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="5eec9f78-5d5d-42b6-bf4e-f51c11bd7e6a" ParentLink="Construct_MessageRef" LowerBound="137.23" HigherBound="137.57">
+                        <om:Property Name="Ref" Value="Msg_Halo_PointBucketDeduct_Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Construct" OID="fea58e0e-57b4-4cb3-bc43-4b6e1be83529" ParentLink="ServiceBody_Statement" LowerBound="142.1" HigherBound="148.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_2" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Transform" OID="cf6c4a56-78ca-4f5a-93fe-efb407dee35a" ParentLink="ComplexStatement_Statement" LowerBound="145.1" HigherBound="147.1">
+                        <om:Property Name="ClassName" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Map.Trfm_HaloS2S_Service_Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_2" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessagePartRef" OID="0470b756-b2ee-4c5d-8126-bae5468f7a71" ParentLink="Transform_InputMessagePartRef" LowerBound="146.140" HigherBound="146.174">
+                            <om:Property Name="MessageRef" Value="Msg_Halo_PointBucketDeduct_Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_5" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="bfccb8b8-29cf-43f9-b08d-412e278ae6fc" ParentLink="Transform_OutputMessagePartRef" LowerBound="146.28" HigherBound="146.56">
+                            <om:Property Name="MessageRef" Value="Msg_HaloS2S_Service_Request1" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_6" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="06bacfe0-f52c-45d3-8065-2dac49b7b408" ParentLink="Construct_MessageRef" LowerBound="143.23" HigherBound="143.51">
+                        <om:Property Name="Ref" Value="Msg_HaloS2S_Service_Request1" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="f318f19b-395c-4343-a164-887abc179237" ParentLink="ServiceBody_Statement" LowerBound="148.1" HigherBound="150.1">
+                    <om:Property Name="PortName" Value="Log_Halo_PointBucketDeduct_Request" />
+                    <om:Property Name="MessageName" Value="Msg_HaloS2S_Service_Request1" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Msg_Halo_PointBucketDeduct_Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="24243bbd-ee5e-4a4f-98fa-34e17379bc19" ParentLink="ServiceBody_Statement" LowerBound="150.1" HigherBound="152.1">
+                    <om:Property Name="PortName" Value="Port_HaloS2S_PointBucketDeduction" />
+                    <om:Property Name="MessageName" Value="Msg_HaloS2S_Service_Request1" />
+                    <om:Property Name="OperationName" Value="HaloS2S_PointBucketDeduction" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Receive" OID="02dfd10f-08a0-4f2a-b44d-07087797d43b" ParentLink="ServiceBody_Statement" LowerBound="152.1" HigherBound="154.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="PortName" Value="Port_HaloS2S_PointBucketDeduction" />
+                    <om:Property Name="MessageName" Value="Msg_HaloS2S_Service_Response1" />
+                    <om:Property Name="OperationName" Value="HaloS2S_PointBucketDeduction" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="747e7018-abda-481e-af37-3db1179fc088" ParentLink="ServiceBody_Statement" LowerBound="154.1" HigherBound="160.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_3" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="26c9d101-896f-4877-997f-40beb49f5d4b" ParentLink="ComplexStatement_Statement" LowerBound="157.1" HigherBound="159.1">
+                        <om:Property Name="Expression" Value="Msg_Halo_PointBucketDeduct_Response = var_deserialization.DeserializeMessage(Msg_HaloS2S_Service_Response1);" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="MessageAssignment_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="0211a2b9-67c4-4c5b-b0d6-996bb01f47f7" ParentLink="Construct_MessageRef" LowerBound="155.23" HigherBound="155.58">
+                        <om:Property Name="Ref" Value="Msg_Halo_PointBucketDeduct_Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="45f4ea58-7d24-4459-91ed-5f42f849d9e7" ParentLink="ServiceBody_Statement" LowerBound="160.1" HigherBound="162.1">
+                    <om:Property Name="PortName" Value="Log_Halo_PointBucketDeduct_Response" />
+                    <om:Property Name="MessageName" Value="Msg_Halo_PointBucketDeduct_Response" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_2" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="dcdedb18-ff10-4bbd-83d6-bd8eccebde24" ParentLink="ServiceBody_Statement" LowerBound="162.1" HigherBound="211.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Decide_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="DecisionBranch" OID="c86a7773-58dd-46b9-8419-209b46f07c36" ParentLink="ReallyComplexStatement_Branch" LowerBound="163.13" HigherBound="200.1">
+                        <om:Property Name="Expression" Value="Msg_Halo_PointBucketDeduct_Response.s2sBody.WAT.@errorCode==&quot;&quot;" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Rule_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Construct" OID="a6f30845-612b-4cd8-b55f-0e96600910b1" ParentLink="ComplexStatement_Statement" LowerBound="165.1" HigherBound="171.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_8" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Transform" OID="6abb9b55-dc7b-4daa-b47e-3f135302eff0" ParentLink="ComplexStatement_Statement" LowerBound="168.1" HigherBound="170.1">
+                                <om:Property Name="ClassName" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Map.map_BTHaloPointReqToHaloReq" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Transform_7" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="9faf7be8-7d23-4c53-8a48-97a33aa0297a" ParentLink="Transform_InputMessagePartRef" LowerBound="169.131" HigherBound="169.161">
+                                    <om:Property Name="MessageRef" Value="msg_BTHaloPointToTableBonusReq" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_18" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="9747d611-e5dc-4688-acdd-9d51a8e169cb" ParentLink="Transform_OutputMessagePartRef" LowerBound="169.32" HigherBound="169.48">
+                                    <om:Property Name="MessageRef" Value="Msg_HAlo_RQ_Type" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_19" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="7fb167c1-37f3-4c9a-b699-02c894bef8ed" ParentLink="Construct_MessageRef" LowerBound="166.27" HigherBound="166.43">
+                                <om:Property Name="Ref" Value="Msg_HAlo_RQ_Type" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Construct" OID="9294f159-d69c-4f6e-9fa1-15ee577c9e47" ParentLink="ComplexStatement_Statement" LowerBound="171.1" HigherBound="177.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_9" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Transform" OID="a671ef52-d79e-41b3-b090-bf0ba39bcacd" ParentLink="ComplexStatement_Statement" LowerBound="174.1" HigherBound="176.1">
+                                <om:Property Name="ClassName" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Map.Trfm_HAloReqToHAloSvcReq" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Transform_8" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="883d4c82-6383-4acf-b2eb-7646772bc34b" ParentLink="Transform_InputMessagePartRef" LowerBound="175.127" HigherBound="175.143">
+                                    <om:Property Name="MessageRef" Value="Msg_HAlo_RQ_Type" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_20" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="ed9a22d7-dfab-4297-a30d-8dfc693e2c4e" ParentLink="Transform_OutputMessagePartRef" LowerBound="175.32" HigherBound="175.47">
+                                    <om:Property Name="MessageRef" Value="Msg_HAlo_Svc_RQ" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_21" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="0f714700-6a01-418d-a2fc-f84eae53fac7" ParentLink="Construct_MessageRef" LowerBound="172.27" HigherBound="172.42">
+                                <om:Property Name="Ref" Value="Msg_HAlo_Svc_RQ" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="76ca3a35-932d-472f-bb97-77b159ce4f96" ParentLink="ComplexStatement_Statement" LowerBound="177.1" HigherBound="179.1">
+                            <om:Property Name="PortName" Value="Port_Send_Test_HAlo_Svc_RQ" />
+                            <om:Property Name="MessageName" Value="Msg_HAlo_Svc_RQ" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_Test_HAlo_Svc_RQ" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="9c8f3a0e-c505-442c-9fab-fbaa189e1e9a" ParentLink="ComplexStatement_Statement" LowerBound="179.1" HigherBound="181.1">
+                            <om:Property Name="PortName" Value="Port_HAlo_S2S_Service" />
+                            <om:Property Name="MessageName" Value="Msg_HAlo_Svc_RQ" />
+                            <om:Property Name="OperationName" Value="S2SMessagePostOperation" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_HAlo_Svc_PatronPointBalanceEnq" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="6db38fae-dfb4-44da-85fc-e20d154e830d" ParentLink="ComplexStatement_Statement" LowerBound="181.1" HigherBound="183.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_HAlo_S2S_Service" />
+                            <om:Property Name="MessageName" Value="Msg_HAlo_Svc_RS" />
+                            <om:Property Name="OperationName" Value="S2SMessagePostOperation" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_HAlo_Svc_PatronPointBalanceEnq" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="5cd83052-70b4-4d50-8cbf-e9d016eb430a" ParentLink="ComplexStatement_Statement" LowerBound="183.1" HigherBound="185.1">
+                            <om:Property Name="PortName" Value="Port_Send_Test_HAlo_Svc_RS" />
+                            <om:Property Name="MessageName" Value="Msg_HAlo_Svc_RS" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_Test_HAlo_Svc_RS" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="a6f2b01e-d1df-4292-ba28-e42c387de58c" ParentLink="ComplexStatement_Statement" LowerBound="185.1" HigherBound="191.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_HAlo_RS" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="3f510c6f-701d-4452-a1b5-b6c268555df5" ParentLink="ComplexStatement_Statement" LowerBound="188.1" HigherBound="190.1">
+                                <om:Property Name="Expression" Value="Msg_HAlo_RS_Type = var_deserialization.DeserializeMessage(Msg_HAlo_Svc_RS);" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_4" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="a3d5d28d-847f-4b6e-9511-4882f15f38bd" ParentLink="Construct_MessageRef" LowerBound="186.27" HigherBound="186.43">
+                                <om:Property Name="Ref" Value="Msg_HAlo_RS_Type" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Construct" OID="08d67014-7d18-481e-9bed-25ebad7b5bc1" ParentLink="ComplexStatement_Statement" LowerBound="191.1" HigherBound="199.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="const_PointtoTableBonus" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="916bbdfe-6bda-4ae5-a4ad-1c37250df8c9" ParentLink="Construct_MessageRef" LowerBound="192.27" HigherBound="192.57">
+                                <om:Property Name="Ref" Value="msg_BTHaloPointToTableBonusRes" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Transform" OID="954037bd-81cd-4a73-b378-b496893d20aa" ParentLink="ComplexStatement_Statement" LowerBound="194.1" HigherBound="196.1">
+                                <om:Property Name="ClassName" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.map_ToFinalResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Transform_4" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="1e70b5ed-8a3c-462e-9c96-61e88e21e5da" ParentLink="Transform_InputMessagePartRef" LowerBound="195.133" HigherBound="195.149">
+                                    <om:Property Name="MessageRef" Value="Msg_HAlo_RS_Type" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="909ab3e7-13eb-485c-94fa-1dada888ae05" ParentLink="Transform_InputMessagePartRef" LowerBound="195.151" HigherBound="195.181">
+                                    <om:Property Name="MessageRef" Value="msg_BTHaloPointToTableBonusReq" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="93ee04e5-2050-411a-ac6e-5a892e23472b" ParentLink="Transform_OutputMessagePartRef" LowerBound="195.32" HigherBound="195.62">
+                                    <om:Property Name="MessageRef" Value="msg_BTHaloPointToTableBonusRes" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_7" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="c6e5b0cc-eda6-4c67-bb09-8454153c0769" ParentLink="ComplexStatement_Statement" LowerBound="196.1" HigherBound="198.1">
+                                <om:Property Name="Expression" Value="msg_BTHaloPointToTableBonusRes(WCF.OutboundCustomHeaders) = &quot;&lt;headers&gt;&lt;token&gt;&quot; + var_Token + &quot;&lt;/token&gt;&lt;/headers&gt;&quot;;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="f19433ee-54a2-4e7a-a19d-be78d8b7716f" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Construct" OID="e5a06732-89cf-4b0d-9895-c66056af3411" ParentLink="ComplexStatement_Statement" LowerBound="202.1" HigherBound="210.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_4" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Transform" OID="1aa4921f-308e-4fb8-a2d4-d38271e8c98a" ParentLink="ComplexStatement_Statement" LowerBound="205.1" HigherBound="207.1">
+                                <om:Property Name="ClassName" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Map.map_HaloPointConversion_To_TableBonusCreditRes_Copy" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Transform_3" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="73dc1f85-9d9e-4d19-80c2-24b2b97d1e7b" ParentLink="Transform_InputMessagePartRef" LowerBound="206.169" HigherBound="206.199">
+                                    <om:Property Name="MessageRef" Value="msg_BTHaloPointToTableBonusReq" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_8" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="2379d6fd-9ef9-4002-9a25-07db448f8a79" ParentLink="Transform_InputMessagePartRef" LowerBound="206.201" HigherBound="206.236">
+                                    <om:Property Name="MessageRef" Value="Msg_Halo_PointBucketDeduct_Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_9" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="48707b36-77c6-4b5b-9446-15f1bd58aa56" ParentLink="Transform_OutputMessagePartRef" LowerBound="206.32" HigherBound="206.62">
+                                    <om:Property Name="MessageRef" Value="msg_BTHaloPointToTableBonusRes" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_10" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="663c808b-9103-4a23-9902-092ad5662764" ParentLink="ComplexStatement_Statement" LowerBound="207.1" HigherBound="209.1">
+                                <om:Property Name="Expression" Value="msg_BTHaloPointToTableBonusRes(WCF.OutboundCustomHeaders) = &quot;&lt;headers&gt;&lt;token&gt;&quot; + var_Token + &quot;&lt;/token&gt;&lt;/headers&gt;&quot;;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="6253b6c1-4d22-4802-ba3f-85f1d98ad2c1" ParentLink="Construct_MessageRef" LowerBound="203.27" HigherBound="203.57">
+                                <om:Property Name="Ref" Value="msg_BTHaloPointToTableBonusRes" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="201bc8e6-ecaa-4c4c-bf87-14fe496f6461" ParentLink="ServiceBody_Statement" LowerBound="211.1" HigherBound="213.1">
+                    <om:Property Name="PortName" Value="Log_Response_PointConversion" />
+                    <om:Property Name="MessageName" Value="msg_BTHaloPointToTableBonusRes" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_3" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="e1e36f52-c2ec-4794-9338-1032efbd8ecd" ParentLink="ServiceBody_Statement" LowerBound="213.1" HigherBound="215.1">
+                    <om:Property Name="PortName" Value="Log_RequestAndResponse_PointConversion" />
+                    <om:Property Name="MessageName" Value="msg_BTHaloPointToTableBonusRes" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="snd_PointConversionReq" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="cdbda598-5061-4d97-81ad-631343d56651" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="91.1" HigherBound="93.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="38" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PortType_Port_HaloS2S_PointBucketDeduction" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_HaloS2S_PointBucketDeduction" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="2456f7ac-732b-416e-91df-3c43e8a379fa" ParentLink="PortDeclaration_CLRAttribute" LowerBound="91.1" HigherBound="92.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d4dbaf13-0194-40d9-b1f3-3158a4ac8294" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="93.1" HigherBound="95.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="0" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PortType_rcv_PointConversionReq" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Log_rcv_PointConversionReq" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="9a14bd48-096f-41dd-baeb-63ff08f1b50f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="93.1" HigherBound="94.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="b5811cd6-7cb9-4594-84ac-c24c1ab5b39e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="95.1" HigherBound="97.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="14" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PortType_Log_Halo_PointBucketDeduct_Request" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Log_Halo_PointBucketDeduct_Request" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="2eda9e04-0e4e-42df-bc55-e39b80e22408" ParentLink="PortDeclaration_CLRAttribute" LowerBound="95.1" HigherBound="96.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="955e2c38-e9f1-471f-a445-40e1a0bcca73" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="97.1" HigherBound="99.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="0" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PortType_Log_RequestAndResponse_PointConversion" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Log_RequestAndResponse_PointConversion" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="b64b6601-bcb7-4220-920a-87cac80216a2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="97.1" HigherBound="98.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="7f51ebc1-c977-4d44-a95e-ec10af5bdb76" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="99.1" HigherBound="101.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="80" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PortType_Send_Test_HAlo_Svc_RQ" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_Send_Test_HAlo_Svc_RQ" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="eb16e792-7be2-44dd-b481-bd58b916231a" ParentLink="PortDeclaration_CLRAttribute" LowerBound="99.1" HigherBound="100.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="8c02f2fc-5dd9-41d7-9ca4-c3038829e2bd" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="101.1" HigherBound="103.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="85" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PortType_HAlo_S2S_Service" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_HAlo_S2S_Service" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="e93982a7-63af-4c46-97ae-5c60f8ecd3f1" ParentLink="PortDeclaration_CLRAttribute" LowerBound="101.1" HigherBound="102.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9401fc7d-ae31-4b06-a7f4-63c428789ad2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="103.1" HigherBound="105.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="90" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PortType_Send_Test_HAlo_Svc_RS" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_Send_Test_HAlo_Svc_RS" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="1c56e5a7-c23d-40b8-809b-df2ebf3c7088" ParentLink="PortDeclaration_CLRAttribute" LowerBound="103.1" HigherBound="104.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4bbbcb2e-c656-4282-9420-dc23becfa15d" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="105.1" HigherBound="107.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="45" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PortType_Log_Halo_PointBucketDeduct_Response" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Log_Halo_PointBucketDeduct_Response" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="f4f7b952-82e9-4b2f-8edd-a2891f14a87f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="105.1" HigherBound="106.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f35d0640-d76a-422d-85f3-c77e8c97f986" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="107.1" HigherBound="109.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="117" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.PortType_Log_Response_PointConversion" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Log_Response_PointConversion" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="6063863b-47bb-4b42-8e3d-9d45cc8b32ba" ParentLink="PortDeclaration_CLRAttribute" LowerBound="107.1" HigherBound="108.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Tiger.BT.Gaming.ConvertHaloPointsToTableBonus
+{
+    internal porttype prtType_HaloPointToTableBonus
+    {
+        requestresponse Operation_1
+        {
+            Schema.BT_ConvertPointToTableBonusReq, Schema.BT_ConvertPointToTableBonusRes
+        };
+    };
+    internal porttype PortType_Log_Halo_PointBucketDeduct_Request
+    {
+        oneway Operation_1
+        {
+            Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest
+        };
+    };
+    internal porttype PortType_Port_HaloS2S_PointBucketDeduction
+    {
+        requestresponse HaloS2S_PointBucketDeduction
+        {
+            Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest, Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sResponse
+        };
+    };
+    internal porttype PortType_Log_Halo_PointBucketDeduct_Response
+    {
+        oneway Operation_1
+        {
+            Schema.Halo1.HaloPointAdjustmentResponse1
+        };
+    };
+    internal porttype PortType_rcv_PointConversionReq
+    {
+        oneway Operation_1
+        {
+            Schema.BT_ConvertPointToTableBonusReq
+        };
+    };
+    internal porttype PortType_Log_PointTConversionReqAndResponse
+    {
+        requestresponse Operation_1
+        {
+            Schema.BT_ConvertPointToTableBonusReq, Schema.BT_ConvertPointToTableBonusRes
+        };
+    };
+    internal porttype PortType_Log_Response_PointConversion
+    {
+        oneway Operation_1
+        {
+            Schema.BT_ConvertPointToTableBonusRes
+        };
+    };
+    internal porttype PortType_Log_RequestAndResponse_PointConversion
+    {
+        requestresponse Operation_1
+        {
+            Schema.BT_ConvertPointToTableBonusReq, Schema.BT_ConvertPointToTableBonusRes
+        };
+    };
+    internal porttype PortType_Send_Test_HAlo_Svc_RQ
+    {
+        oneway Operation_1
+        {
+            Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest
+        };
+    };
+    internal porttype PortType_HAlo_S2S_Service
+    {
+        requestresponse S2SMessagePostOperation
+        {
+            Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest, Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sResponse
+        };
+    };
+    internal porttype PortType_Send_Test_HAlo_Svc_RS
+    {
+        oneway Operation_1
+        {
+            Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sResponse
+        };
+    };
+    internal porttype PortType_Log_TestEnquiryPointBlanceResult
+    {
+        oneway Operation_1
+        {
+            Schema.BT_ConvertPointToTableBonusRes
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service CovertHaloPointToTableBonus
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Port_HaloS2S_PointBucketDeduction Port_HaloS2S_PointBucketDeduction;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_rcv_PointConversionReq Log_rcv_PointConversionReq;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Log_Halo_PointBucketDeduct_Request Log_Halo_PointBucketDeduct_Request;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_Log_RequestAndResponse_PointConversion Log_RequestAndResponse_PointConversion;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Send_Test_HAlo_Svc_RQ Port_Send_Test_HAlo_Svc_RQ;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_HAlo_S2S_Service Port_HAlo_S2S_Service;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Send_Test_HAlo_Svc_RS Port_Send_Test_HAlo_Svc_RS;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Log_Halo_PointBucketDeduct_Response Log_Halo_PointBucketDeduct_Response;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Log_Response_PointConversion Log_Response_PointConversion;
+        message Schema.BT_ConvertPointToTableBonusReq msg_BTHaloPointToTableBonusReq;
+        message Schema.BT_ConvertPointToTableBonusRes msg_BTHaloPointToTableBonusRes;
+        message Schema.Halo1.HaloPointAdjustmentRequest1 Msg_Halo_PointBucketDeduct_Request;
+        message Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest Msg_HaloS2S_Service_Request1;
+        message Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sResponse Msg_HaloS2S_Service_Response1;
+        message Schema.Halo1.HaloPointAdjustmentResponse1 Msg_Halo_PointBucketDeduct_Response;
+        message Schema.BallyRequestPlayerBalance Msg_HAlo_RQ_Type;
+        message Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sRequest Msg_HAlo_Svc_RQ;
+        message Tiger.BT.Gaming.HAloS2S.S2SMessagePostPortType_www_gamingstandards_com_s2s_wsdl_v1_1_S2SMessageService_wsdl.s2sResponse Msg_HAlo_Svc_RS;
+        message Schema.BallyGetPropertyBalancesResponse Msg_HAlo_RS_Type;
+        Tiger.BT.RESTBehaviour.JWTTokenUtil var_JWTUtility;
+        System.String var_Token;
+        Tiger.BT.Gaming.Deserialization.Deserialization var_deserialization;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ec8da5c7-04df-428f-ac81-81ff690426a1")]
+            activate receive (Log_RequestAndResponse_PointConversion.Operation_1, msg_BTHaloPointToTableBonusReq);
+            var_JWTUtility = new Tiger.BT.RESTBehaviour.JWTTokenUtil();
+            var_Token = "";
+            var_deserialization = new Tiger.BT.Gaming.Deserialization.Deserialization();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("307110c9-bdb0-4b51-83e6-09336622f2c7")]
+            send (Log_rcv_PointConversionReq.Operation_1, msg_BTHaloPointToTableBonusReq);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("fd29f5d3-788d-46d1-b081-5e5452f8737b")]
+            var_Token=var_JWTUtility.GenerateToken(msg_BTHaloPointToTableBonusReq.PatronID,false);
+            
+            System.Diagnostics.EventLog.WriteEntry("Table Bonus",msg_BTHaloPointToTableBonusReq.PatronID);
+            //System.Diagnostics.Debug.WriteLine(var_Token); 
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c5260be9-0f5a-4ed5-8813-fdcefe18bbe9")]
+            construct Msg_Halo_PointBucketDeduct_Request
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c5de931d-4c58-4466-94cf-dc6cd85dac49")]
+                transform (Msg_Halo_PointBucketDeduct_Request) = Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Map.Trfm_Halo_PointBucketDeduct_Request (msg_BTHaloPointToTableBonusReq);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("fea58e0e-57b4-4cb3-bc43-4b6e1be83529")]
+            construct Msg_HaloS2S_Service_Request1
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("cf6c4a56-78ca-4f5a-93fe-efb407dee35a")]
+                transform (Msg_HaloS2S_Service_Request1) = Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Map.Trfm_HaloS2S_Service_Request (Msg_Halo_PointBucketDeduct_Request);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f318f19b-395c-4343-a164-887abc179237")]
+            send (Log_Halo_PointBucketDeduct_Request.Operation_1, Msg_HaloS2S_Service_Request1);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("24243bbd-ee5e-4a4f-98fa-34e17379bc19")]
+            send (Port_HaloS2S_PointBucketDeduction.HaloS2S_PointBucketDeduction, Msg_HaloS2S_Service_Request1);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("02dfd10f-08a0-4f2a-b44d-07087797d43b")]
+            receive (Port_HaloS2S_PointBucketDeduction.HaloS2S_PointBucketDeduction, Msg_HaloS2S_Service_Response1);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("747e7018-abda-481e-af37-3db1179fc088")]
+            construct Msg_Halo_PointBucketDeduct_Response
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("26c9d101-896f-4877-997f-40beb49f5d4b")]
+                Msg_Halo_PointBucketDeduct_Response = var_deserialization.DeserializeMessage(Msg_HaloS2S_Service_Response1);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("45f4ea58-7d24-4459-91ed-5f42f849d9e7")]
+            send (Log_Halo_PointBucketDeduct_Response.Operation_1, Msg_Halo_PointBucketDeduct_Response);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dcdedb18-ff10-4bbd-83d6-bd8eccebde24")]
+            if (Msg_Halo_PointBucketDeduct_Response.s2sBody.WAT.@errorCode=="")
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a6f30845-612b-4cd8-b55f-0e96600910b1")]
+                construct Msg_HAlo_RQ_Type
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("6abb9b55-dc7b-4daa-b47e-3f135302eff0")]
+                    transform (Msg_HAlo_RQ_Type) = Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Map.map_BTHaloPointReqToHaloReq (msg_BTHaloPointToTableBonusReq);
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9294f159-d69c-4f6e-9fa1-15ee577c9e47")]
+                construct Msg_HAlo_Svc_RQ
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a671ef52-d79e-41b3-b090-bf0ba39bcacd")]
+                    transform (Msg_HAlo_Svc_RQ) = Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Map.Trfm_HAloReqToHAloSvcReq (Msg_HAlo_RQ_Type);
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("76ca3a35-932d-472f-bb97-77b159ce4f96")]
+                send (Port_Send_Test_HAlo_Svc_RQ.Operation_1, Msg_HAlo_Svc_RQ);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9c8f3a0e-c505-442c-9fab-fbaa189e1e9a")]
+                send (Port_HAlo_S2S_Service.S2SMessagePostOperation, Msg_HAlo_Svc_RQ);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6db38fae-dfb4-44da-85fc-e20d154e830d")]
+                receive (Port_HAlo_S2S_Service.S2SMessagePostOperation, Msg_HAlo_Svc_RS);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("5cd83052-70b4-4d50-8cbf-e9d016eb430a")]
+                send (Port_Send_Test_HAlo_Svc_RS.Operation_1, Msg_HAlo_Svc_RS);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a6f2b01e-d1df-4292-ba28-e42c387de58c")]
+                construct Msg_HAlo_RS_Type
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3f510c6f-701d-4452-a1b5-b6c268555df5")]
+                    Msg_HAlo_RS_Type = var_deserialization.DeserializeMessage(Msg_HAlo_Svc_RS);
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("08d67014-7d18-481e-9bed-25ebad7b5bc1")]
+                construct msg_BTHaloPointToTableBonusRes
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("954037bd-81cd-4a73-b378-b496893d20aa")]
+                    transform (msg_BTHaloPointToTableBonusRes) = Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.map_ToFinalResponse (Msg_HAlo_RS_Type, msg_BTHaloPointToTableBonusReq);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c6e5b0cc-eda6-4c67-bb09-8454153c0769")]
+                    msg_BTHaloPointToTableBonusRes(WCF.OutboundCustomHeaders) = "<headers><token>" + var_Token + "</token></headers>";
+                }
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e5a06732-89cf-4b0d-9895-c66056af3411")]
+                construct msg_BTHaloPointToTableBonusRes
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1aa4921f-308e-4fb8-a2d4-d38271e8c98a")]
+                    transform (msg_BTHaloPointToTableBonusRes) = Tiger.BT.Gaming.ConvertHaloPointsToTableBonus.Map.map_HaloPointConversion_To_TableBonusCreditRes_Copy (msg_BTHaloPointToTableBonusReq, Msg_Halo_PointBucketDeduct_Response);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("663c808b-9103-4a23-9902-092ad5662764")]
+                    msg_BTHaloPointToTableBonusRes(WCF.OutboundCustomHeaders) = "<headers><token>" + var_Token + "</token></headers>";
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("201bc8e6-ecaa-4c4c-bf87-14fe496f6461")]
+            send (Log_Response_PointConversion.Operation_1, msg_BTHaloPointToTableBonusRes);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e1e36f52-c2ec-4794-9338-1032efbd8ecd")]
+            send (Log_RequestAndResponse_PointConversion.Operation_1, msg_BTHaloPointToTableBonusRes);
+        }
+    }
+}
+
